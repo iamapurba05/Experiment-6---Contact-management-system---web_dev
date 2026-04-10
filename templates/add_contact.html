@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<h3>Add New Contact</h3>
+<form method="POST">
+    <label>Name:</label><br>
+    <input type="text" name="name" required><br><br>
+    <label>Phone:</label><br>
+    <input type="text" name="phone" required><br><br>
+    <label>Email:</label><br>
+    <input type="email" name="email" required><br><br>
+    <button type="submit">Save Contact</button>
+</form>
+{% endblock %}

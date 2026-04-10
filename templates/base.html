@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Manager</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <nav>
+        <h2>Contact Manager</h2>
+        <a href="{{ url_for('index') }}">Home</a> | 
+        <a href="{{ url_for('add_contact') }}">Add New Contact</a>
+    </nav>
+    <hr>
+    {% block content %}{% endblock %}
+</body>
+</html>
